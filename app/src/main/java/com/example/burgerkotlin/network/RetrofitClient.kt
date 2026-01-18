@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClient {
 
-    private const val BASE_URL = "http://10.0.2.2/burger_apps/api/"
+    private const val BASE_URL = "https://greg-tuner-wings-airline.trycloudflare.com/burger_apps/api/"
 
     private val loggingInterceptor by lazy {
         HttpLoggingInterceptor().apply {
