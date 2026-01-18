@@ -18,12 +18,6 @@
         tools:layout="@layout/fragment_profile" />
 
     <fragment
-        android:id="@+id/nav_management_user"
-        android:name="com.example.burgerkotlin.ui.role.admin.main.user_management.UserManagementFragment"
-        android:label="@string/menu_management_user"
-        tools:layout="@layout/fragment_user_management" />
-
-    <fragment
         android:id="@+id/nav_order_management"
         android:name="com.example.burgerkotlin.ui.role.admin.main.order_management.OrderFragment"
         android:label="@string/menu_management_order"

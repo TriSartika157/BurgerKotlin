@@ -17,12 +17,6 @@
             android:icon="@drawable/ikon"
             android:title="My Profile" />
 
-        <!-- Management User -->
-        <item
-            android:id="@+id/nav_management_user"
-            android:icon="@drawable/ic_user_management"
-            android:title="Management User" />
-
         <!-- Order Management -->
         <item
             android:id="@+id/nav_order_management"
