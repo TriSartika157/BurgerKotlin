@@ -1,4 +1,4 @@
-package com.example.burgerkotlin.viewmodel
+package com.example.burgerkotlin.ui.auth.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

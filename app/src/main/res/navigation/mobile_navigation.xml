@@ -20,7 +20,7 @@
     <fragment
         android:id="@+id/nav_order_management"
         android:name="com.example.burgerkotlin.ui.role.admin.main.order_management.OrderFragment"
-        android:label="@string/menu_management_order"
+        android:label="Tambah Menu"
         tools:layout="@layout/fragment_order" />
 
     <fragment

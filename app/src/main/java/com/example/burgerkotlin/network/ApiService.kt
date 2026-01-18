@@ -43,4 +43,12 @@ interface ApiService {
     suspend fun deleteOrder(
         @Query("id") orderId: Int
     ): Response<BaseResponse<Unit>>
+
+    @POST("menu/create.php")
+    suspend fun menuCreate(
+        @Body body: MenuModels
+    ): Response<BaseResponse<Unit>>
+
+    @GET("menu/list.php")
+    suspend fun getMenu(): Response<List<MenuResponse>>
 }
