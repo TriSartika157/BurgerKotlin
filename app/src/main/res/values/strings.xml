@@ -13,5 +13,6 @@
     <string name="menu_profile">My Profile</string>
     <string name="menu_management_user">Management User</string>
     <string name="menu_management_order">Order Management</string>
-    <string name="menu_track">Track Pesanan</string>
+    <string name="menu_track">Track Pesanaan</string>
+
 </resources>
