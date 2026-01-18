@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myprofile">
+
+    <!-- ================= CONTENT (DI BAWAH HEADER) ================= -->
+    <ScrollView
+        android:id="@+id/scroll_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="32dp">
+
+            <!-- Profile Image -->
+            <FrameLayout
+                android:id="@+id/profile_container"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_circle"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_profile" />
+
+                <!-- IKON KAMERA (DITAMBAHKAN BACKGROUND SAJA) -->
+                <ImageView
+                    android:id="@+id/ic_camera_profile"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/bg_circle_orange"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_camera" />
+            </FrameLayout>
+
+            <!-- Full Name -->
+            <TextView
+                android:id="@+id/tv_fullname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:text="Full Name"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profile_container" />
+
+            <EditText
+                android:id="@+id/et_fullname"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input_yellow"
+                android:paddingStart="16dp"
+                android:text="John Smith"
+                app:layout_constraintEnd_toEndOf="@id/tv_fullname"
+                app:layout_constraintStart_toStartOf="@id/tv_fullname"
+                app:layout_constraintTop_toBottomOf="@id/tv_fullname" />
+
+            <!-- Date of Birth -->
+            <TextView
+                android:id="@+id/tv_dob"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Date of Birth"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/et_fullname"
+                app:layout_constraintStart_toStartOf="@id/et_fullname"
+                app:layout_constraintTop_toBottomOf="@id/et_fullname" />
+
+            <EditText
+                android:id="@+id/et_dob"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input_yellow"
+                android:paddingStart="16dp"
+                android:text="09 / 10 / 1991"
+                app:layout_constraintEnd_toEndOf="@id/tv_dob"
+                app:layout_constraintStart_toStartOf="@id/tv_dob"
+                app:layout_constraintTop_toBottomOf="@id/tv_dob" />
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Email"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/et_dob"
+                app:layout_constraintStart_toStartOf="@id/et_dob"
+                app:layout_constraintTop_toBottomOf="@id/et_dob" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input_yellow"
+                android:paddingStart="16dp"
+                android:text="johnsmith@example.com"
+                app:layout_constraintEnd_toEndOf="@id/tv_email"
+                app:layout_constraintStart_toStartOf="@id/tv_email"
+                app:layout_constraintTop_toBottomOf="@id/tv_email" />
+
+            <!-- Phone -->
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Phone Number"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/et_email"
+                app:layout_constraintStart_toStartOf="@id/et_email"
+                app:layout_constraintTop_toBottomOf="@id/et_email" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input_yellow"
+                android:paddingStart="16dp"
+                android:text="+123 567 89000"
+                app:layout_constraintEnd_toEndOf="@id/tv_phone"
+                app:layout_constraintStart_toStartOf="@id/tv_phone"
+                app:layout_constraintTop_toBottomOf="@id/tv_phone" />
+
+            <!-- Button -->
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="#3BB54A"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:text="Update Profile"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_phone" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

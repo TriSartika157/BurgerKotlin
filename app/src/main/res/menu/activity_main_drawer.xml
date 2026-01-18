@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <!-- My Profile -->
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_chart"
+            android:title="Home" />
+
+        <!-- My Profile -->
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ikon"
+            android:title="My Profile" />
+
+        <!-- Management User -->
+        <item
+            android:id="@+id/nav_management_user"
+            android:icon="@drawable/ic_user_management"
+            android:title="Management User" />
+
+        <!-- Order Management -->
+        <item
+            android:id="@+id/nav_order_management"
+            android:icon="@drawable/ic_order"
+            android:title="Order Management" />
+
+        <!-- Order Management -->
+        <item
+            android:id="@+id/nav_track"
+            android:icon="@drawable/ic_chart"
+            android:title="Track Pesanan" />
+
+        <!-- Logout -->
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+
+    </group>
+
+</menu>
