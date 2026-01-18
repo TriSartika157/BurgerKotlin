@@ -9,7 +9,7 @@ import com.example.burgerkotlin.R
 
 class OrderFragment : Fragment() {
 
-    //create
+    //create e
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
